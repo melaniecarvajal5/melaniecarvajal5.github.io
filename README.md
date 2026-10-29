@@ -1,26 +1,22 @@
-# Melanie Carvajal | Sitio web
+# Melanie Carvajal · Sitio web
 
-Sitio estático para GitHub Pages. Sin hosting ni servicios de pago.
+Versión con identidad visual Miss Melanie 2026. Compatible con GitHub Pages sin procesos de compilación.
 
 ## Publicación
-1. Descarga el ZIP y descomprímelo.
-2. En el repositorio `melaniecarvajal5/melaniecarvajal5.github.io`, entra a **Code → Add file → Upload files**.
-3. Sube **index.html**, **styles.css**, **script.js**, **favicon.svg** y la carpeta **assets** con las imágenes (no subas el ZIP sin descomprimir).
-4. Pulsa **Commit changes** y espera 1 a 5 minutos.
-5. Abre https://melaniecarvajal5.github.io/ y actualiza la página.
+1. Descomprime el ZIP.
+2. En tu repositorio `melaniecarvajal5.github.io`, usa **Add file → Upload files**.
+3. Sube **todos los archivos y la carpeta `assets`** directamente a la raíz del repositorio.
+4. Confirma con **Commit changes**.
+5. Espera unos minutos y visita https://melaniecarvajal5.github.io/ .
 
-## Para actualizar
-- Textos y enlaces: `index.html`.
-- Colores y estilos: `styles.css` (variables al inicio).
-- Interacción del menú: `script.js`.
-- Fotografías: carpeta `assets`.
+## Archivos
+- `index.html`: estructura y enlaces.
+- `styles.css`: estilos base existentes.
+- `identidad-visual.css`: archivo de identidad visual suministrado, conservado íntegramente.
+- `ajustes-identidad.css`: aplicación de la nueva identidad sobre la web anterior.
+- `script.js`: menú móvil y año.
+- `assets/`: fotografías existentes.
 
-## Pendientes antes de lanzamiento final
-- Validar paleta exacta contra la página original de Hotmart (la paleta actual es una aproximación cálida).
-- Revisar si la autoevaluación pública funciona sin iniciar sesión.
-- Confirmar el contenido y precio de materiales IELTS antes de publicarlos con detalles.
-- Sustituir el espacio de testimonios por testimonios reales con autorización.
-- Agregar fotografías de docencia e Irlanda cuando estén disponibles.
-- Verificar las imágenes de viajes y sus textos alternativos.
+Los CSS se cargan en orden: base, identidad y ajustes. Para modificar los colores, edita las variables `--mm-*` en `identidad-visual.css`.
 
-No incluye formularios que recopilen datos ni herramientas de seguimiento.
+No se incluyen testimonios inventados ni servicios de asesoría Working Holiday como oferta activa.

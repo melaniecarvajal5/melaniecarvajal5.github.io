@@ -1,0 +1,127 @@
+/*
+  MISS MELANIE — Identidad visual para web
+  Fuente: Portafolio_Miss_Melanie_2026_Sueno_Hecho_Realidad.pdf
+  Paleta y tipografias extraidas del PDF de 7 paginas.
+  Archivo creado el 29 de octubre de 2026.
+*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Display:wght@600&display=swap');
+
+:root {
+  /* Colors — exact hexadecimal values used in portfolio */
+  --mm-navy: #13283B;            /* Fondo de portada y cierre */
+  --mm-red: #B31837;             /* Acento rojo carmesi */
+  --mm-cream: #FAF6F0;           /* Fondo crema principal */
+  --mm-ink: #173043;             /* Texto principal en fondo crema */
+  --mm-muted: #596B75;           /* Texto secundario */
+  --mm-blush: #F5D7D5;           /* Rosa suave en frases editoriales */
+  --mm-pink: #E7B2BA;            /* Acentos sobre navy */
+  --mm-pale-blue: #D4E1E7;       /* Texto acento sobre navy */
+  --mm-border: #DBD9D3;          /* Bordes y divisores */
+  --mm-white: #FFFFFF;           /* Tarjetas */
+  --mm-deep-card: #19384C;       /* Tarjetas oscuras de resultados */
+  --mm-sand: #EBDDD5;            /* Fondo de citas y destacados */
+  --mm-light-muted: #D1DBE0;     /* Texto secundario sobre navy */
+
+  /* Font families as used in the PDF */
+  --mm-font-display: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --mm-font-heading: 'Noto Serif Display', Georgia, serif;
+  --mm-font-body: 'Lato', Arial, Helvetica, sans-serif;
+
+  /* General UI tokens */
+  --mm-page-max: 1160px;
+  --mm-space-section: clamp(64px, 8vw, 112px);
+  --mm-radius-card: 12px;
+  --mm-radius-button: 6px;
+  --mm-outline: 2px solid var(--mm-red);
+}
+
+body {
+  margin: 0;
+  background: var(--mm-cream);
+  color: var(--mm-ink);
+  font-family: var(--mm-font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, .mm-display {
+  font-family: var(--mm-font-display);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+h1 { font-size: clamp(52px, 7vw, 96px); margin: 0 0 .25em; }
+h2 { font-size: clamp(38px, 4.6vw, 64px); margin: 0 0 .4em; }
+h3, .mm-card-heading {
+  font-family: var(--mm-font-heading);
+  font-weight: 600;
+  font-size: clamp(23px, 2.2vw, 32px);
+  line-height: 1.22;
+}
+p { margin: 0 0 1.1em; }
+
+.mm-eyebrow, .mm-label {
+  font-family: var(--mm-font-body);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--mm-red);
+}
+.mm-quote, .mm-editorial-intro {
+  font-family: var(--mm-font-display);
+  font-style: italic;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.3;
+}
+.mm-muted { color: var(--mm-muted); }
+.mm-container { max-width: var(--mm-page-max); margin-inline: auto; padding-inline: 24px; }
+.mm-section { padding-block: var(--mm-space-section); }
+.mm-divider { border: 0; border-top: 1px solid var(--mm-border); }
+
+.mm-hero, .mm-dark-section {
+  background: var(--mm-navy);
+  color: var(--mm-cream);
+}
+.mm-dark-section .mm-muted { color: var(--mm-light-muted); }
+.mm-dark-section .mm-eyebrow { color: var(--mm-pink); }
+.mm-card {
+  background: var(--mm-white);
+  padding: clamp(22px, 3vw, 40px);
+  border: 1px solid var(--mm-border);
+  border-radius: var(--mm-radius-card);
+}
+.mm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mm-red);
+  color: #FFFFFF;
+  border: 1px solid var(--mm-red);
+  border-radius: var(--mm-radius-button);
+  padding: 13px 24px;
+  font-family: var(--mm-font-body);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+.mm-button:hover { background: #8E142B; }
+.mm-button:focus-visible { outline: 3px solid var(--mm-pink); outline-offset: 3px; }
+.mm-button-outline {
+  background: transparent;
+  color: var(--mm-red);
+}
+.mm-button-outline:hover { background: var(--mm-red); color: #FFFFFF; }
+.mm-photo { display: block; width: 100%; height: auto; border-radius: 6px; object-fit: cover; }
+
+@media (max-width: 640px) {
+  .mm-container { padding-inline: 18px; }
+  h1 { font-size: clamp(46px, 12vw, 66px); }
+  h2 { font-size: clamp(35px, 9vw, 48px); }
+}
