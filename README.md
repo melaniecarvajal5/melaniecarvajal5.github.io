@@ -1,28 +1,10 @@
-# Melanie Carvajal · Sitio web
+# Melanie Carvajal — Web con testimonios literales
 
-Web estática para GitHub Pages, con identidad visual Miss Melanie 2026 y carrusel automático de testimonios.
-
-## Publicar
-
-1. Descomprime el ZIP.
-2. Abre `https://github.com/melaniecarvajal5/melaniecarvajal5.github.io`.
-3. Sube **el contenido** de esta carpeta (no la carpeta contenedora) a la raíz de la rama `main`, reemplazando los archivos anteriores.
-4. Confirma los cambios y espera el despliegue en `https://melaniecarvajal5.github.io`.
-
-Si GitHub no te permite reemplazar archivos mediante Upload files, usa el editor web o elimina los antiguos antes de subir los nuevos, conservando el resto del repositorio.
-
-## Archivos
-
-- `index.html`: contenido de la página.
-- `identidad-visual.css`: paleta y tipografías entregadas por Melanie.
-- `styles.css`: estilos de la página y del carrusel.
-- `script.js`: navegación móvil y carrusel (cada 7 segundos).
-- `assets/`: fotografías optimizadas y capturas originales de testimonios.
+Sube todos los archivos y la carpeta `assets/` a la raíz del repositorio `melaniecarvajal5.github.io`.
 
 ## Testimonios
+Los textos son transcripciones literales de los mensajes proporcionados por Alberto Castillo, Natalia Lillo y Consuelo Farías. Se excluyeron las preguntas y respuestas de Melanie. No se incluyen capturas de conversaciones. Los mensajes largos se pueden desplazar para leer completos.
 
-Se incluyen nombres, fotos y enlaces a capturas originales autorizadas. No se inventaron citas ni se transcribieron mensajes de forma incierta. Revisar que las capturas no muestren información privada que deba ocultarse antes de la publicación.
+**Fotografía de Natalia:** su ZIP solo contenía dos capturas de conversación, no una fotografía independiente. Por eso se muestra un monograma «NL» hasta recibir una foto autorizada. Puedes añadir `assets/natalia-foto.jpg` y sustituir el bloque `testimonial-monogram` en `index.html` por una etiqueta `<img>`.
 
-## Nota
-
-No requiere dependencias, compilación ni pagos. Las fuentes de Google Fonts requieren conexión a internet y tienen alternativas locales.
+El carrusel avanza automáticamente cada 7 segundos y se pausa al interactuar.
